@@ -21,7 +21,7 @@ jobs:
     trigger: pull_request
     metadata:
       targets:
-        - fedora-stable
+        - fedora-35
       branch: develop
       owner: LenkaSeg
       project: datagrepper
