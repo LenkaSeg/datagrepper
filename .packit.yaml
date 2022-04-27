@@ -23,5 +23,5 @@ jobs:
       targets:
         - fedora-35
       branch: develop
-      owner: LenkaSeg
+      owner: lenkaseg
       project: datagrepper
