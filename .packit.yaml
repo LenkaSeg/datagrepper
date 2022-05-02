@@ -15,13 +15,12 @@ downstream_package_name: datagrepper
 
 actions:
     post-upstream-clone: "wget https://src.fedoraproject.org/rpms/datagrepper/raw/rawhide/f/datagrepper.spec -O datagrepper.spec"
-    post-upstream-clone: "wget https://src.fedoraproject.org/rpms/datagrepper/raw/rawhide/f/datagrepper-0.9.5-fix-test.patch -O datagrepper-0.9.5-fix-test.patch"
+
 jobs:
   - job: copr_build
     trigger: pull_request
     metadata:
       targets:
         - fedora-35
-      branch: develop
       owner: lenkaseg
       project: datagrepper
