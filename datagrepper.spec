@@ -5,7 +5,7 @@
 
 Name:           datagrepper
 Version:        1.0.0
-Release:        5.20220428142515131895.new_pr.76.g754bb34%{?dist}
+Release:        5.20220502230341749741.packit.yml.76.g5f4705a%{?dist}
 Summary:        A webapp to query fedmsg history
 
 License:        GPLv2+
