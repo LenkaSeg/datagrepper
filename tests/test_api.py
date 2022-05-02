@@ -227,8 +227,7 @@ class TestAPI(unittest.TestCase):
         resp = self.client.get("/charts/line")
         self.assertEqual(resp.status_code, 200)
         self.assertEqual(resp.mimetype, "image/svg+xml")
-        self.assertIn(
-            b'<svg xmlns:xlink="http://www.w3.org/1999/xlink"',
+        self.assertIn(b'<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"',
             resp.get_data(),
         )
 
