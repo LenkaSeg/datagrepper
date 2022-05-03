@@ -43,8 +43,8 @@ rm %{modname}/docs/{Makefile,conf.py}
 
 %build
 %py3_build
-%{__python3} setup.py build_sphinx
-rm build/sphinx/html/.buildinfo
+#%{__python3} setup.py build_sphinx
+#rm build/sphinx/html/.buildinfo
 
 %install
 %py3_install
