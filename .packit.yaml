@@ -14,6 +14,11 @@ upstream_package_name: datagrepper
 downstream_package_name: datagrepper
 
 actions:
+   create-archive:
+        - "poetry build -f sdist"
+        - "sh -c 'echo dist/datagrepper-$(poetry version -s).tar.gz'"
+   get-current-version:
+        - "poetry version -s"
    post-upstream-clone:
        # we need poetry v1.1.7 because of a bug in 1.1.8 where python evaluates incorrectly
        - "sh -c 'wget https://raw.githubusercontent.com/python-poetry/poetry/master/install-poetry.py && python3 install-poetry.py --version 1.1.7'"

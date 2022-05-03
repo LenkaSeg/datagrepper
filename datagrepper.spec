@@ -43,8 +43,6 @@ rm %{modname}/docs/{Makefile,conf.py}
 
 %build
 %py3_build
-#%{__python3} setup.py build_sphinx
-#rm build/sphinx/html/.buildinfo
 
 %install
 %py3_install
@@ -57,7 +55,7 @@ mkdir -p %{buildroot}%{_sysconfdir}/%{modname}/
 install -m 644 apache/%{modname}.cfg %{buildroot}%{_sysconfdir}/%{modname}/%{modname}.cfg
 
 %check
-%{__python3} setup.py test
+%{__python3} -m pytest -v
 
 %files
 %doc README.rst COPYING build/sphinx/html
