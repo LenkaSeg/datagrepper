@@ -15,6 +15,7 @@ Source0:        datagrepper-1.0.0.tar.gz
 BuildArch:      noarch
 
 BuildRequires:  python3-arrow
+BuildRequires:  python3-coverage
 BuildRequires:  python3-datanommer-models
 BuildRequires:  python3-devel
 BuildRequires:  python3-docutils

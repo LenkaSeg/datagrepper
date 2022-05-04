@@ -14,9 +14,7 @@ upstream_package_name: datagrepper
 downstream_package_name: datagrepper
 
 srpm_build_deps:
-  - poetry
   - wget
-  - pytest
 
 actions:
    create-archive:
