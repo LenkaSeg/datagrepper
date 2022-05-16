@@ -4,7 +4,7 @@
 
 Name:           %{pypi_name}
 Version:        1.0.0
-Release:        5.20220512084037636794.spec.71.g249c187%{?dist}
+Release:        5.20220513101138819116.spec.73.g3145ea8%{?dist}
 Summary:        A webapp to query fedmsg history
 
 License:        GPLv2+
@@ -45,7 +45,6 @@ cp -a %{pypi_name}/docs .
 %pyproject_buildrequires
 
 %build
-#%py3_build
 %pyproject_wheel
 make %{?_smp_mflags} -C %{pypi_name}/docs
 
