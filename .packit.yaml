@@ -34,8 +34,7 @@ jobs:
     trigger: pull_request
     metadata:
       targets:
-        - fedora-35
-        - fedora-rawhide
-        - fedora-stable
+        - fedora-latest-stable
+        - fedora-development
       owner: lenkaseg
       project: datagrepper
